@@ -133,7 +133,7 @@ ${jsonLd}
 
   // Launch puppeteer
   const browser = await puppeteer.launch({
-    headless: 'new', // Use new headless mode
+    headless: true,
     args: ['--no-sandbox', '--disable-setuid-sandbox']
   });
 
