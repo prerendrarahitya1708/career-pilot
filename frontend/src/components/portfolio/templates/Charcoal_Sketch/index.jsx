@@ -64,9 +64,12 @@ const { personal, socials, skills, projects, experience, stats, testimonials } =
             >
               <div className="relative">
                 <div className="absolute -inset-4 bg-zinc-600/30 blur-2xl rounded-full"></div>
-                <img 
+                  <img 
                   src={personal.avatar} 
                   alt={personal.name} 
+                  onError={(e) => { 
+                    e.currentTarget.src = `https://ui-avatars.com/api/?name=${encodeURIComponent(personal.name)}&background=27272a&color=a1a1aa`; 
+                  }}
                   className="relative w-64 h-64 md:w-72 md:h-72 object-cover sketch-box grayscale hover:grayscale-0 transition-all duration-700"
                 />
               </div>
@@ -209,9 +212,12 @@ const { personal, socials, skills, projects, experience, stats, testimonials } =
                   </p>
                   
                   <div className="flex items-center gap-4">
-                    <img 
+                      <img 
                       src={testimonial.avatar} 
                       alt={testimonial.name} 
+                      onError={(e) => { 
+                        e.currentTarget.src = `https://ui-avatars.com/api/?name=${encodeURIComponent(testimonial.name)}&background=27272a&color=a1a1aa`; 
+                      }}
                       className="w-12 h-12 rounded-full sketch-box grayscale"
                     />
                     <div>
@@ -223,7 +229,7 @@ const { personal, socials, skills, projects, experience, stats, testimonials } =
               ))}
             </div>
           </section>
-          
+
           {/* ================= FOOTER / CONTACT ================= */}
           <footer className="border-t-2 border-zinc-800 border-dashed pt-12 pb-24 text-center">
             <h3 className="text-3xl font-bold text-zinc-100 mb-6">Let's create something.</h3>
