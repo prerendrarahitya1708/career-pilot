@@ -1,4 +1,7 @@
 import { useState } from "react";
+import { motion, AnimatePresence } from "framer-motion";
+import { Moon, Sun } from "lucide-react";
+import { useTheme } from "../context/ThemeContext";
 import DeployModal from "../components/portfolio/DeployModal";
 import ThemeSelector from "../components/portfolio/ThemeSelector";
 import DesertDunes from "../components/portfolio/templates/Desert_Dunes/index";
