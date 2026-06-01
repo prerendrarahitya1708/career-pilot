@@ -90,6 +90,7 @@ const ProjectVisualizerDashboard = lazy(() => import('./pages/ProjectVisualizer/
 import ScrollToTop from "./components/ScrollToTop";
 import NorthernFjords from './components/portfolio/templates/Northern_Fjords';
 import RainforestCanopy from './components/portfolio/templates/Rainforest_Canopy/index.jsx';
+import TypewriterEffect from './components/portfolio/templates/Typewriter_Effect/index.jsx';
 import ChromaticGlitch from './components/portfolio/templates/Chromatic_Glitch/index.jsx';
 import SwissTypography from './components/portfolio/templates/Swiss_Typography/index.jsx';
 import DesertDunes from './components/portfolio/templates/Desert_Dunes/index.jsx';
@@ -246,6 +247,7 @@ function AppRoutes() {
         {/* <Route path="/templates/day-night-cycle" element={<DayNightCycle />} /> */}
         <Route path="/templates/rainforest-canopy" element={<RainforestCanopy />} />
         <Route path="/templates/northern-fjords" element={<NorthernFjords />} />
+        <Route path="/templates/typewriter-effect" element={<TypewriterEffect />} />
         <Route path="/templates/chromatic-glitch" element={<ChromaticGlitch />} />
         <Route path="/templates/swiss-typography" element={<SwissTypography />} />
         <Route path="/templates/desert-dunes" element={<DesertDunes />} />
