@@ -27,3 +27,4 @@ export {
   SkeletonTracker,
   SkeletonSettings,
 } from './Skeleton'
+export { Select, SelectTrigger, SelectValue, SelectContent, SelectItem } from './select'

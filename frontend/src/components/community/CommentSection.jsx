@@ -46,7 +46,7 @@ function CommentItem({ comment, currentUser, onReply, onLike, depth = 0 }) {
     <div className={`${depth > 0 ? 'ml-8 border-l-2 border-border pl-4' : ''}`}>
       <div className="flex gap-3 py-3">
         {/* Avatar */}
-        <div className="flex-shrink-0">
+        <div className="shrink-0">
           <div className="w-8 h-8 rounded-full bg-gradient-to-br from-primary to-secondary flex items-center justify-center text-primary-foreground text-xs font-medium">
             {comment.author?.avatar ? (
               <img 
@@ -198,7 +198,7 @@ export default function CommentSection({ postId, currentUser, onCommentAdded }) 
       setTotal(data.pagination.total);
       setHasMore(data.comments.length === 20 && data.pagination.total > pageToFetch * 20);
     } catch (error) {
-      toast.error('Failed to load comments');
+      toast.error('Failed to load comments', { id: `community-comments-load-error-${postId}` });
     } finally {
       setLoading(false);
     }
@@ -217,7 +217,7 @@ export default function CommentSection({ postId, currentUser, onCommentAdded }) 
       onCommentAdded?.();
       toast.success('Comment posted!');
     } catch (error) {
-      toast.error('Failed to post comment');
+      toast.error('Failed to post comment', { id: `community-post-comment-error-${postId}` });
     } finally {
       setIsSubmitting(false);
     }
@@ -267,7 +267,7 @@ export default function CommentSection({ postId, currentUser, onCommentAdded }) 
       
       setComments(updateCommentLike);
     } catch (error) {
-      toast.error('Failed to like comment');
+      toast.error('Failed to like comment', { id: `community-like-comment-error-${commentId}` });
     }
   };
 
@@ -276,7 +276,7 @@ export default function CommentSection({ postId, currentUser, onCommentAdded }) 
       {/* Comment Input */}
       <div className="p-4 border-b border-border bg-muted/50">
         <form onSubmit={handleSubmitComment} className="flex gap-2">
-          <div className="w-8 h-8 rounded-full bg-gradient-to-br from-primary to-secondary flex items-center justify-center text-primary-foreground text-xs font-medium flex-shrink-0">
+          <div className="w-8 h-8 rounded-full bg-gradient-to-br from-primary to-secondary flex items-center justify-center text-primary-foreground text-xs font-medium shrink-0">
             {currentUser?.photoURL ? (
               <img 
                 src={currentUser.photoURL} 
