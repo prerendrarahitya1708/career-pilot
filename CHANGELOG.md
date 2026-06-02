@@ -1,3 +1,10 @@
+# [1.2.0](https://github.com/advikdivekar/career-pilot-advik/compare/v1.1.1...v1.2.0) (2026-06-02)
+
+
+### Features
+
+* add routes and isComplete flag for 5 new portfolio templates ([2ab6ebe](https://github.com/advikdivekar/career-pilot-advik/commit/2ab6ebebff2c4fa5e5ea559100a1938d4c60c15b))
+
 ## [1.1.1](https://github.com/advikdivekar/career-pilot-advik/compare/v1.1.0...v1.1.1) (2026-06-02)
 
 
