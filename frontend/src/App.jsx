@@ -28,6 +28,7 @@ import ResumeBuilder from './pages/ResumeBuilder';
 import TextToResume from './pages/TextToResume';
 import About from './components/portfolio/templates/Tech_Startup/About';
 import ChatbotPortfolio from "./components/portfolio/templates/Chatbot_Portfolio";
+import GlassmorphismTemplate from "./components/portfolio/templates/Glassmorphism/index";
 
 import JobTracker from './pages/JobTracker';
 import { Community, NotFound } from './pages';
@@ -170,7 +171,8 @@ function AppRoutes() {
 
         {/* Template Gallery Route (Registered at /templates) */}
         <Route path="/templates" element={<TemplateGallery />} />
-        <Route path="/templates/chatbot" element={<ChatbotPortfolio />} />
+        <Route path="/templates/chatbot" element={<ChatbotPortfolio />} /> 
+        <Route path="/templates/glassmorphism" element={<GlassmorphismTemplate/>} />
         {/* Core Protected Routes */}
         <Route path="/dashboard" element={<ProtectedRoute><Dashboard /></ProtectedRoute>} />
         <Route path="/upload" element={<ProtectedRoute><Upload /></ProtectedRoute>} />
