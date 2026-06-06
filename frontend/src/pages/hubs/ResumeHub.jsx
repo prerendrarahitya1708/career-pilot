@@ -19,9 +19,16 @@ import { Link } from 'react-router-dom';
 import { motion } from 'framer-motion';
 import toast from 'react-hot-toast';
 
+
 export default function ResumeHub() {
-  const [resumes, setResumes] = useState([]);
-  const [loading, setLoading] = useState(true);
+  const [resumes, setResumes] = useState([])
+  const [loading, setLoading] = useState(true)
+  const [fontFamily, setFontFamily] = useState("Poppins")
+  const [fontSize, setFontSize] = useState("Medium")
+  const [colorTheme, setColorTheme] = useState("Blue")
+  const [headerStyle, setHeaderStyle] = useState("Modern")
+  const [pageMargin, setPageMargin] = useState("Normal")
+  const [sectionSpacing, setSectionSpacing] = useState("Medium")
 
   useEffect(() => {
     const fetchResumes = async () => {

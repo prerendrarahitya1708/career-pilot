@@ -6,6 +6,7 @@
 * add Error 404 Infinite Gallery template [#3262](https://github.com/krishsoni-hub/career-pilot-krishhub/issues/3262) ([85acfe2](https://github.com/krishsoni-hub/career-pilot-krishhub/commit/85acfe2adcf71cc24ba4312d6b9806305cb842d2))
 
 # 1.0.0 (2026-06-06)
+# [1.174.0](https://github.com/anurag3407/career-pilot/compare/v1.173.0...v1.174.0) (2026-06-06)
 
 
 ### Bug Fixes
@@ -280,6 +281,7 @@
 * **weeklyDigest:** implement actual job staggering instead of misleading delay:0 ([d20af76](https://github.com/krishsoni-hub/career-pilot-krishhub/commit/d20af760f80290117ad3f822ba12071b8ef9db0f))
 * **weeklyDigest:** use _id instead of uid for job payload and worker lookup ([f3c8a0f](https://github.com/krishsoni-hub/career-pilot-krishhub/commit/f3c8a0f799494fbcfa94e17ef9d84d8229acce04))
 * wrap escrow release and challenge update in MongoDB transaction ([#1274](https://github.com/krishsoni-hub/career-pilot-krishhub/issues/1274)) ([12f8ed7](https://github.com/krishsoni-hub/career-pilot-krishhub/commit/12f8ed7ac9bf3a9627c61ef3a4aec47eaf444b25))
+* resolve merge conflict with upstream main ([c93c199](https://github.com/anurag3407/career-pilot/commit/c93c19935290a9402aa165171db4bae98c51f27d))
 
 
 ### Features
@@ -626,6 +628,10 @@
 ### Reverts
 
 * remove non-mosaic branch changes ([fe3cba8](https://github.com/krishsoni-hub/career-pilot-krishhub/commit/fe3cba8c098c5f6fd28022a07f98e81d843e1601))
+* add portfolio analytics dashboard ([8d510b8](https://github.com/anurag3407/career-pilot/commit/8d510b87b986a06f9353b48143ee75abb5b0c4d9))
+* add resume improvement progress tracker ([3f1d779](https://github.com/anurag3407/career-pilot/commit/3f1d7791d9fcdbdbcc87432ee467f6842c6c2f80))
+* add resume PDF export customization options ([d33989c](https://github.com/anurag3407/career-pilot/commit/d33989c38fc6d266951e167c4796b070fc873b3e))
+* add smart resume section recommendations ([2c8e2df](https://github.com/anurag3407/career-pilot/commit/2c8e2df096deab015b6bae0d4d8b3735e9617066))
 
 # [1.173.0](https://github.com/anurag3407/career-pilot/compare/v1.172.0...v1.173.0) (2026-06-06)
 
