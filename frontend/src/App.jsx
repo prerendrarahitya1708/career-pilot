@@ -248,6 +248,28 @@ function AppRoutes() {
 
         {/* Template Gallery Route (Registered at /templates) */}
         <Route path="/templates" element={<TemplateGallery />} />
+
+        
+
+        <Route path="/templates/chatbot" element={<ChatbotPortfolio />} />
+
+        {/* <Route path="/templates/day-night-cycle" element={<DayNightCycle />} /> */}
+        <Route path="/templates/rainforest-canopy" element={<RainforestCanopy />} />
+        <Route path="/templates/northern-fjords" element={<NorthernFjords />} />
+        <Route path="/templates/duotone-bold" element={<DuotoneBold />} />
+        <Route path="/templates/chromatic-glitch" element={<ChromaticGlitch />} />
+        <Route path="/templates/swiss-typography" element={<SwissTypography />} />
+        <Route path="/templates/desert-dunes" element={<DesertDunes />} />
+        <Route path="/templates/psychedelic-swirl" element={<PsychedelicSwirl />} />
+        <Route path="/templates/memphis-pop" element={<MemphisPop />} />
+        <Route path="/templates/cassette-mixtape" element={<CassetteMixtape />} />
+        <Route path="/templates/magnetic-dock" element={<MagneticDock />} />
+        <Route path="/templates/ocean-depths" element={<OceanDepths />} />
+        <Route path="/templates/neon-cityscape" element={<NeonCityscape />} />
+        <Route path="/templates/planetary-orbit" element={<PlanetaryOrbit />} />
+        <Route path="/templates/low-poly-terrain" element={<LowPolyTerrain />} />
+        <Route path="/templates/high-fashion" element={<HighFashion />} />
+
         <Route path="/templates/chatbot" element={<ChatbotPortfolio />} /> 
         <Route path="/templates/glassmorphism" element={<GlassmorphismTemplate/>} />
         {/* Core Protected Routes */}
