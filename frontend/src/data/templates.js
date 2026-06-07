@@ -1,4 +1,18 @@
 export const templates = [
+   
+{
+  "id": "Eye_Tracking_Heatmap_Simulation",
+  "title": "Eye Tracking Heatmap Simulation",
+  "category": "Portfolio",
+  "colorScheme": "Dark",
+  "layout": "Fullscreen",
+  "author": "System",
+  "views": 0,
+  "rating": 0,
+  "image": "/template-previews/Eye_Tracking_Heatmap_Simulation.png",
+  "createdAt": "2026-06-07",
+  "isComplete": true
+},
   {
   "id": "Vercel_Deploy",
   "title": "Vercel Deploy",
