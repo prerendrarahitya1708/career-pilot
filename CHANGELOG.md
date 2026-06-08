@@ -1,3 +1,10 @@
+# [1.195.0](https://github.com/anurag3407/career-pilot/compare/v1.194.0...v1.195.0) (2026-06-08)
+
+
+### Features
+
+* ATS Intelligence Engine UI – score card, dashboard route, backend scoring ([09e83a2](https://github.com/anurag3407/career-pilot/commit/09e83a23fae506f7a9180c20731dad2bd6c734fb))
+
 # [1.194.0](https://github.com/anurag3407/career-pilot/compare/v1.193.0...v1.194.0) (2026-06-08)
 
 
