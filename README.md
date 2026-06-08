@@ -42,7 +42,17 @@ The project combines a React + Vite frontend with an Express backend, Firebase a
   <img src="https://img.shields.io/badge/Socket.IO-4-cyan?logo=socket.io&logoColor=white" alt="Socket.IO" />
 </div>
 
-Career Pilot combines a polished React frontend with AI APIs, cloud auth, real-time updates, and resume export workflows.
+<div align="center">
+  <p style="max-width:800px; margin:8px auto; text-align:center;">
+    Career Pilot combines a polished React frontend with AI providers, cloud-based authentication, real-time collaboration, and reliable resume export workflows.
+  </p>
+  <p style="display:flex; gap:8px; justify-content:center; flex-wrap:wrap;">
+    <img src="https://img.shields.io/badge/React-19-blue?logo=react&logoColor=white" alt="React" />
+    <img src="https://img.shields.io/badge/Vite-7.3.5-brightgreen?logo=vite&logoColor=white" alt="Vite" />
+    <img src="https://img.shields.io/badge/TailwindCSS-4-skyblue?logo=tailwindcss&logoColor=white" alt="Tailwind" />
+    <img src="https://img.shields.io/badge/Firebase-auth-orange?logo=firebase&logoColor=white" alt="Firebase" />
+  </p>
+</div>
 
 ## Workflow / How It Works
 
@@ -53,29 +63,7 @@ Career Pilot combines a polished React frontend with AI APIs, cloud auth, real-t
 5. Users can publish a developer portfolio and showcase projects.
 6. Real-time notifications and collaboration features keep the experience responsive.
 
-## Screenshots / Visual Preview
-
-
-<div align="center">
-  <img src="https://via.placeholder.com/1100x420.png?text=Career+Pilot+Dashboard+Preview" alt="Career Pilot Dashboard preview" width="100%" />
-</div>
-
-<div align="center" style="display:flex; gap:16px; flex-wrap:wrap; justify-content:center; margin-top:16px;">
-  <img src="https://via.placeholder.com/520x320.png?text=Resume+Builder+Editor" alt="Resume Builder Editor" width="48%" style="max-width:520px;" />
-  <img src="https://via.placeholder.com/520x320.png?text=Job+Search+and+Alerts" alt="Job Search and Alerts" width="48%" style="max-width:520px;" />
-</div>
-
-<div align="center" style="display:flex; gap:16px; flex-wrap:wrap; justify-content:center; margin-top:16px;">
-  <img src="https://via.placeholder.com/520x320.png?text=Portfolio+Template+Gallery" alt="Portfolio Template Gallery" width="48%" style="max-width:520px;" />
-  <img src="https://via.placeholder.com/520x320.png?text=Interview+Prep+Workflow" alt="Interview Prep Workflow" width="48%" style="max-width:520px;" />
-</div>
-
-### Highlights
-
-- Resume builder and export workflow
-- Job search, alerts, and interview prep UI
-- Portfolio template previews and publishing flow
-- AI content generation and productivity tools
+<!-- Screenshots removed per request: add real screenshots or GIFs in `docs/assets/` and reference them here when available -->
 
 ## Environment Variables
 
