@@ -1,3 +1,10 @@
+# [1.192.0](https://github.com/anurag3407/career-pilot/compare/v1.191.0...v1.192.0) (2026-06-08)
+
+
+### Features
+
+* **portfolio:** add About section for Origami Paper theme ([3f08a1a](https://github.com/anurag3407/career-pilot/commit/3f08a1a29cca8895eb26d3e7f36401d7e21b38f5))
+
 # 1.0.0 (2026-06-07)
 
 
