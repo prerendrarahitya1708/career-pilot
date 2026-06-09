@@ -73,7 +73,7 @@ router.post('/start', verifyToken, extractAIProvider, aiRateLimiter, validate(st
         jobRole,
         industry,
         experienceLevel,
-        questionCount: count,
+        questionCount: 1, // Generate only the first question initially
         resumeText: resumeText || null
     }, req.aiProvider);
 
@@ -83,6 +83,8 @@ router.post('/start', verifyToken, extractAIProvider, aiRateLimiter, validate(st
         industry,
         experienceLevel,
         questions,
+        totalQuestionCount: count,
+        contextSummary: '',
         status: 'in_progress',
         startedAt: new Date()
     });
@@ -93,7 +95,8 @@ router.post('/start', verifyToken, extractAIProvider, aiRateLimiter, validate(st
         success: true,
         data: {
             interviewId: interview._id,
-            questions: interview.questions
+            questions: interview.questions,
+            totalQuestionCount: interview.totalQuestionCount
         },
         provider: req.aiProvider.providerName,
         providerSource: req.aiProviderSource
@@ -123,7 +126,15 @@ router.post('/:id/answer', verifyToken, extractAIProvider, aiRateLimiter, valida
         throw new ApiError(400, 'Question already answered');
     }
 
-    const analysis = await analyzeAnswer(question.question, transcript, duration, req.aiProvider);
+    const analysis = await analyzeAnswer(
+        question.question, 
+        transcript, 
+        duration, 
+        req.aiProvider, 
+        interview.contextSummary, 
+        interview.answers.length + 1, 
+        interview.totalQuestionCount
+    );
 
     const answer = {
         questionId,
@@ -141,6 +152,26 @@ router.post('/:id/answer', verifyToken, extractAIProvider, aiRateLimiter, valida
     };
 
     interview.answers.push(answer);
+    
+    // Update context summary
+    if (analysis.newContextSummary) {
+        interview.contextSummary = analysis.newContextSummary;
+    }
+
+    // Add next question if provided
+    let nextQuestion = null;
+    if (analysis.nextQuestion && interview.answers.length < interview.totalQuestionCount) {
+        // Generate a new ID for the question
+        nextQuestion = {
+            questionId: `q_${Date.now()}_${Math.random().toString(36).substr(2, 9)}`,
+            question: analysis.nextQuestion.question,
+            type: analysis.nextQuestion.type,
+            difficulty: analysis.nextQuestion.difficulty,
+            source: analysis.nextQuestion.source || 'context'
+        };
+        interview.questions.push(nextQuestion);
+    }
+
     await interview.save();
 
     res.json({
@@ -149,7 +180,9 @@ router.post('/:id/answer', verifyToken, extractAIProvider, aiRateLimiter, valida
             questionId,
             analysis,
             answeredCount: interview.answers.length,
-            totalQuestions: interview.questions.length
+            totalQuestions: interview.totalQuestionCount,
+            nextQuestion,
+            questions: interview.questions
         },
         provider: req.aiProvider.providerName,
         providerSource: req.aiProviderSource
