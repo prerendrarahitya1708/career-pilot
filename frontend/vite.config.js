@@ -30,7 +30,7 @@ export default defineConfig({
     },
     proxy: {
       '/api': {
-        target: 'http://localhost:5001',
+        target: 'http://backend_container:5001',
         changeOrigin: true,
       },
     },

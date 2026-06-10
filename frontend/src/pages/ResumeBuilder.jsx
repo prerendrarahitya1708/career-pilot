@@ -193,7 +193,7 @@ setRecommendedSkills(
     resumeText.includes(keyword.toLowerCase())
   )
 
-  const missing = keywords.filter(
+  const missingKeywords = keywords.filter(
   keyword => !foundKeywords.includes(keyword)
 )
 

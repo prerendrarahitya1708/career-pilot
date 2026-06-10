@@ -268,7 +268,7 @@ function TemplateCard({ template, hovered, onHover, onLeave, onUse, aiDraft }) {
           </span>
           <span className="flex items-center gap-1.5">
             <Eye className="w-3.5 h-3.5" />
-            {template.views.toLocaleString()}
+            {template.views?.toLocaleString()}
           </span>
         </div>
 
