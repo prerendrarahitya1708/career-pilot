@@ -1,3 +1,20 @@
+## [1.211.4](https://github.com/anurag3407/career-pilot/compare/v1.211.3...v1.211.4) (2026-06-10)
+
+
+### Bug Fixes
+
+* change hardcoded white title in Resume Builder to use gradient-text ([e86afff](https://github.com/anurag3407/career-pilot/commit/e86afffa5bb21e2a173b593711d9fac3cf82e772))
+* force dark mode in Resume Builder and default to dark theme ([0a726e3](https://github.com/anurag3407/career-pilot/commit/0a726e3e3f38f13b2710fe0012f6dd1a712cc88e))
+* remove hardcoded light theme from index.html body and style tag ([c4be000](https://github.com/anurag3407/career-pilot/commit/c4be00072c4aae059fdce179dc7a55f4393f6106)), closes [#f8](https://github.com/anurag3407/career-pilot/issues/f8)
+* resolve invisible text and hardcoded styles on TextToResume page ([f03193f](https://github.com/anurag3407/career-pilot/commit/f03193f8d756ed3a522110574f984a533b07b116))
+* resolve Resume Builder white screen crash and dark theme issues ([6ead037](https://github.com/anurag3407/career-pilot/commit/6ead0376841bda4de916c0d8312c7763d93ea684))
+* revert primary blue colors to original black/white design ([4887b71](https://github.com/anurag3407/career-pilot/commit/4887b713637aa17e2075eddb3f02d22043230346))
+
+
+### Reverts
+
+* force dark mode in Resume Builder and default to dark theme ([5e7a319](https://github.com/anurag3407/career-pilot/commit/5e7a319b63d8d9e5251ce60994a66ecd70bded2f))
+
 ## [1.211.3](https://github.com/anurag3407/career-pilot/compare/v1.211.2...v1.211.3) (2026-06-10)
 
 
