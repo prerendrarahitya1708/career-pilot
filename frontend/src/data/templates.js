@@ -1,4 +1,17 @@
 export const templates = [
+  {
+    id: "Forensic_Investigator_Desk",
+    title: "Forensic Investigator Desk",
+    category: "Portfolio",
+    colorScheme: "Dark",
+    layout: "Interactive",
+    author: "ShaktiShrey-01",
+    views: 0,
+    rating: 0,
+    image: "/template-previews/Forensic_investigator_desk.png", 
+    createdAt: "2026-06-11",
+    isComplete: true
+  },
 {
   "id": "Fake_WebOS_Operating_System",
   "title": "Fake WebOS Operating System",
