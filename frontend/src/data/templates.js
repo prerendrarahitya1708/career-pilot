@@ -1,4 +1,17 @@
 export const templates = [
+  {
+    "id": "Cartographer_Antiquity_Map_Room",
+    "title": "Cartographer Antiquity Map Room",
+    "category": "Portfolio",
+    "colorScheme": "Light",
+    "layout": "Interactive",
+    "author": "Your Name",
+    "views": 9999,
+    "rating": 5.0,
+    "image": "/template-previews/Cartographer_Antiquity_Map_Room.png",
+    "createdAt": "2026-06-13",
+    "isComplete": true
+  },
 
 {
   "id": "Virtual_Reality_Room_360",
